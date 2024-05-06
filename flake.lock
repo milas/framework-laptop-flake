@@ -1,5 +1,25 @@
 {
   "nodes": {
+    "crane": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1714864355,
+        "narHash": "sha256-uXNW6bapWFfkYIkK1EagydSrFMqycOYEDSq75GmUpjk=",
+        "owner": "ipetkov",
+        "repo": "crane",
+        "rev": "442a7a6152f49b907e73206dc8e1f46a61e8e873",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ipetkov",
+        "repo": "crane",
+        "type": "github"
+      }
+    },
     "flake-utils": {
       "inputs": {
         "systems": "systems"
@@ -15,6 +35,38 @@
       "original": {
         "owner": "numtide",
         "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "framework-cpu-usage-led": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1676514351,
+        "narHash": "sha256-AhvzJ8c0Qz1NZDNmblVJJx00x/osZzay+BqtWcVgS5c=",
+        "owner": "gamingdoom",
+        "repo": "framework-cpu-usage-led",
+        "rev": "52011d8450501fb405729236edb8a0db81be6404",
+        "type": "github"
+      },
+      "original": {
+        "owner": "gamingdoom",
+        "repo": "framework-cpu-usage-led",
+        "type": "github"
+      }
+    },
+    "framework-system": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1714453745,
+        "narHash": "sha256-yTd4jT+DpDRkanr+srXoRd+l+skUjL1LMsf1osfizAk=",
+        "owner": "FrameworkComputer",
+        "repo": "framework-system",
+        "rev": "b03685b932cea0e8492592c138b8d20b5c0ac7c5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "FrameworkComputer",
+        "repo": "framework-system",
         "type": "github"
       }
     },
@@ -36,6 +88,22 @@
         "type": "gitlab"
       }
     },
+    "keylightd": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1714954116,
+        "narHash": "sha256-QFsbd3npKQkiNuv9xxU0erKClbDACiu8fg7NNecsqz8=",
+        "ref": "refs/heads/main",
+        "rev": "cc342852ed0df040331dbb3c11ac7af0791be1bd",
+        "revCount": 9,
+        "type": "git",
+        "url": "https://code.notaphish.fyi/milas/keylightd"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://code.notaphish.fyi/milas/keylightd"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1714809261,
@@ -54,8 +122,12 @@
     },
     "root": {
       "inputs": {
+        "crane": "crane",
         "flake-utils": "flake-utils",
+        "framework-cpu-usage-led": "framework-cpu-usage-led",
+        "framework-system": "framework-system",
         "fw-ectool": "fw-ectool",
+        "keylightd": "keylightd",
         "nixpkgs": "nixpkgs"
       }
     },
